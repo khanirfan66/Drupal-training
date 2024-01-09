@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .first-div img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+    
+    .second-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .second-div img {
+      width: 80px;
+      height: 80px;
+      margin: 5px;
+    }
+    
+    .third-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .inner-div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .inner-div img {
+      width: 60px;
+      height: 60px;
+      margin: 3px;
+    }
+    .inner-div {
+      width: 60px;
+      height: 60px;
+      margin: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="first-div">
+      <img src="images/top-image.webp" alt="First Image">
+    </div>
+    
+    <div class="second-div">
+      <img src="images/1.webp" alt="Second Image">
+      <img src="images/2.webp" alt="Second Image">
+      <img src="images/3.webp" alt="Second Image">
+    </div>
+    
+    <div class="third-div">
+      <div class="inner-div">
+        <img src="images/small-image.jpg" alt="Third Image">
+        <img src="images/small2-image.jpg" alt="Third Image">
+        <img src="images/bottom-image.jpg" alt="Third Image">
+      </div>
+      <div class="inner-div">
+        <!-- Place content for second inner div here -->
+        <img src="images/small-image.jpg" alt="Third Image">
+        <img src="images/small2-image.jpg" alt="Third Image">
+        <img src="images/bottom-image.jpg" alt="Third Image">
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

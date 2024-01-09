@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>image grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap:10px;
+        }
+        @media (min-width:768px) {
+            .grid-container {
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 1fr;
+            }
+            
+        }
+        .bottom-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        
+    }
+    .top-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .large-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .small-image {
+        width: 100%;
+        height: 100%;
+        object-fit: covers;
+    }
+
+    </style>
 </head>
 <body>
-    <p>this is paragraph</p>
+    <div class="grid-container">
+        <div class="top-image">
+            <img src="images/top-image.webp" alt="top image">
+        </div>
+        <div class="bottom-image">
+            <div class="large-image">
+                <img src="images/bottom-image.jpg" alt="large image">
+            </div>
+        </div>
+        <div class="small-image">
+            <img src="images/small-image.jpg" alt="small image">
+            <img src="images/small1-image.jpg" alt="small image">
+            <img src="images/small2-image.jpg" alt="small image">
+        </div>
+
+    </div>
     
 </body>
 </html>
